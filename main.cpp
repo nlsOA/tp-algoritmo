@@ -1,4 +1,5 @@
 #include<iostream>
+using namespace std;
 
 //Clima
 struct Clima{
@@ -42,7 +43,69 @@ struct Nodo{
     Nodo* sgte;
 };
 
+/*
+
+1. Una consulta por id de dato, la cual tiene que devolver todo lo que incluya ese
+dato
+
+2. Para el clima, poder consultar los días catastróficos (Temperaturas extremas o
+situaciones extremas) y devolver el promedio de temperatura de estos días
+Las temperaturas extremas son mayores a 40 grados Celsius y menores a -10
+grados Celsius y las situaciones extremas son granizo y diluvio (más de 100
+milímetros en 24 horas) . Para esta consulta deben subir los datos a una
+estructura dinámica definida por ustedes.
+
+3. Para los movimientos sísmicos, hacer un top 3 de los lugares con más
+movimientos sísmicos y dar un promedio de magnitudes de estos movimientos
+por pais.
+
+4. Para la tercera categoría, devolver todo separado por categorías (Ponis, caballos
+ligeros, caballos deportivos, etc) y ordenar por velocidades de mayor a menor
+
+5. Para las primeras tres categorías, hacer dos consultas que mezclen datos entre
+si para resolverlas, por ejemplo: Cuales son las mayores velocidades de los
+UTN.BA – Algoritmos y Estructuras de datos – TP Anual - Página 3 de 4
+caballos los días catastróficos y hacer una lista con tales valores para guardarlo
+en un archivo
+
+*/
+void Menu(){
+    int valor_menu = 0;
+
+    cout << "Bienvenido a Claudio Super GePeTo 3000";
+    cout << "Seleccione una opcion para continuar :D";
+
+    cout << endl;
+    
+    cout << "1) Consulta por ID";
+    cout << "2) Consultar datos catastroficos";
+    cout << "3) Consultar movimientos sismicos";
+    cout << "4) Velocidades caballos";
+    cout << "5) (Categoria por definir)";
+    cout << "6) (Categoria por corregir)";
+
+    cin >> valor_menu;
+
+    while(valor_menu < 0 && valor_menu > 6){
+        cout << "Valor fuera de rango, ingrese otro valor";
+        cin >> valor_menu;
+    }
+
+    if(valor_menu == 1){
+        
+        //consulta_por_Id();
+        //if(consultar_continuidad()){
+        //  Menu();
+        //}
+        //
+
+    }
+    
+}
+
 int main(){
+    //Tenemos que hacer un menu para elegir una de las opciones propuestas por la profesora
+    Menu();
 
     return 0;
 }
