@@ -29,6 +29,13 @@ struct Caballos_datos{
     char ultima_carrera[100+1];
 };
 
+struct Peliculas{
+    int id_pelicula;
+    char nombre[30+1];
+    float rating;
+
+};
+
 
 //Un tinfo para los 3 structs
 //falta un cuarto struct
@@ -36,6 +43,7 @@ struct Tinfo{
     Clima clima;
     Mov_sismicos mov_sismicos;
     Caballos_datos caballos_datos;
+    Peliculas peliculas;
 };
 
 struct Nodo{
@@ -64,9 +72,14 @@ ligeros, caballos deportivos, etc) y ordenar por velocidades de mayor a menor
 
 5. Para las primeras tres categorías, hacer dos consultas que mezclen datos entre
 si para resolverlas, por ejemplo: Cuales son las mayores velocidades de los
-UTN.BA – Algoritmos y Estructuras de datos – TP Anual - Página 3 de 4
 caballos los días catastróficos y hacer una lista con tales valores para guardarlo
-en un archivo
+en un archivo.
+
+6. Para la última categoría personalizada, hacer la consulta por id de dato y
+realizar tres consultas más, de las cuales dos tienen que ser solo relacionado
+con alguna de las propiedades y la ultima tiene que mezclar con otras del
+mismo modo que el punto anterior.
+
 
 */
 void Menu(){
